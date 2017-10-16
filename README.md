@@ -1,19 +1,20 @@
 # c-program-amarnathyatra
 Summer project for beginner TURBO C++
-//By VIVEK @2017                      `
-#include<stdio.h>
-#include<conio.h>
-#include<string.h>
-#include<dos.h>
-#include<time.h>
-#include<stdlib.h>
-void outline();
-void touristinfo();
-void password();
-void clralldata();
-void mainmenu();
-void record();
-struct tourist
+//By VIVEK @2017         
+
+	#include<stdio.h>
+	#include<conio.h>
+	#include<string.h>
+	#include<dos.h>
+	#include<time.h>
+	#include<stdlib.h>
+	void outline();
+	void touristinfo();
+	void password();
+	void clralldata();
+	void mainmenu();
+	void record();
+	struct tourist
 	{
 		char name[20];
 		char fname[20];
@@ -21,14 +22,14 @@ struct tourist
 		int age;
 
 	};
-struct tourist info; FILE *ti;
-int main()
-{    	password();
+	struct tourist info; FILE *ti;
+	int main()
+	{    	password();
 	getch();
 	return 0;
-}
-void record()
-{       char ch;
+	}
+	void record()
+	{       char ch;
 	int c1=0,c2,c3,n=10,a; //color1//color2
 	while
 
@@ -55,9 +56,9 @@ void record()
 		}while(ch!=EOF);
 		gotoxy(20,15);printf("Press Any Key.. For Main Menu");
 		getch();mainmenu();
-}
-void touristinfo()
-{
+	}
+	void touristinfo()
+	{
 	int c1=0,c2,c3,n,a; //color1//color2
 	while(c1==0||c2==0||c3==0)
 	{
@@ -114,12 +115,12 @@ void touristinfo()
 		}
 	fclose(ti);
 	gotoxy(20,17);printf("Press Any Key.. For Main Menu");
-	getch();mainmenu();
+		getch();mainmenu();
 
-}
+	}
 
-void mainmenu()
-{       int c1=0,c2,c3,n; //color1//color2
+	void mainmenu()
+	{       int c1=0,c2,c3,n; //color1//color2
 	while(c1==0||c2==0||c3==0)
 	{
 	time_t t;
@@ -145,9 +146,9 @@ void mainmenu()
 		case 4:exit(1);
 	}
 
-}
-void clralldata()
-{ 	int c1=0,c2,c3,n,a; //color1//color2
+	}
+	void clralldata()
+	{ 	int c1=0,c2,c3,n,a; //color1//color2
 	while(c1==0||c2==0||c3==0)
 	{
 	time_t t;
@@ -159,15 +160,15 @@ void clralldata()
 	system("cls");
 	outline(c1,c2,c3);
 
- ti=fopen("yatralog.txt","w");
- fprintf(ti," ");
- gotoxy(32,12);printf("All Data Is Deleted");
- fclose(ti);
- gotoxy(20,15);printf("Press Any Key.. For Main Menu");
- getch();mainmenu();
-}
-void outline(int x,int y,int z)
-{
+	 ti=fopen("yatralog.txt","w");
+	 fprintf(ti," ");
+	 gotoxy(32,12);printf("All Data Is Deleted");
+	 fclose(ti);
+	 gotoxy(20,15);printf("Press Any Key.. For Main Menu");
+	 getch();mainmenu();
+	}
+	void outline(int x,int y,int z)
+	{
 	int i,j;
 	clrscr();
 	gotoxy(32,2);for(i=0;i<17;i++){printf("%c",15);}
@@ -209,9 +210,9 @@ void outline(int x,int y,int z)
 
 	gotoxy(53,21);printf("By Vivek @2017");
 
-}
-void password()
-{       char password[8]="mahadev";
+	}
+	void password()
+	{       char password[8]="mahadev";
 	char check[8];
 	int c1=0,c2,c3,n; //color1//color2
 	while(c1==0||c2==0||c3==0)
@@ -249,4 +250,4 @@ void password()
 	       exit(1);
 	}
 
-}
+	}
