@@ -1,3 +1,3 @@
-# C-programs
+# Amarnath Yatra 
 Summer project for beginner
-Give PROJECT.C c program for Amarath yatra
+Given PROJECT.C c program for Amarath yatra .It's a Log Entry.
