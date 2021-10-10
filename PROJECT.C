@@ -1,4 +1,7 @@
-//By VIVEK @2017                      `
+//By VIVEK @2017         
+
+// compiler DOS turbo c++ only
+
 #include<stdio.h>
 #include<conio.h>
 #include<string.h>
