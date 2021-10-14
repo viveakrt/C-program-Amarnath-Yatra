@@ -8,6 +8,8 @@
 #include<dos.h>
 #include<time.h>
 #include<stdlib.h>
+
+// this is function for color outline
 void outline();
 void touristinfo();
 void password();
